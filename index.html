@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Accueil</a>
+        <a href="#about">A Propos</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="bx bx-moon" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Salut, Je suis</h3>
+        <h1>Mohamed GNAHOUI</h1>
+        <p>
+          Développeu web, passionné de solution innovante et utile. Je vous
+          accompagne dans la construction d'un monde meilleur.
+        </p>
+
+        <div class="social-media">
+          <a href="#"> <i class="bx bxl-facebook"></i> </a>
+          <a href="#"> <i class="bx bxl-twitter"></i> </a>
+          <a href="#"> <i class="bx bxl-instagram-alt"></i> </a>
+          <a href="#"> <i class="bx bxl-linkedin"></i> </a>
+        </div>
+
+        <a href="images/CV mohamed.pdf" class="btn">Telecharger CV</a>
+      </div>
+
+      <div class="professiom-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Developement Web</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+            <i class="bx bx-bar-chart-alt"></i>
+            <h3>Marketing Digital</h3>
+          </div>
+          <div class="profession" style="--i: 2">
+            <i class="bx bx-palette"></i>
+            <h3>Web design</h3>
+          </div>
+          <div class="profession" style="--i: 3">
+            <i class="bx bxs-cog"></i>
+            <h3>Refactoring</h3>
+          </div>
+
+          <div class="circle"></div>
+        </div>
+
+        <div class="overlay">
+          <div class="container">
+            <div class="cube">
+              <div class="face front"></div>
+              <div class="face back"></div>
+              <div class="face rigth"></div>
+              <div class="face left"></div>
+              <div class="face top"></div>
+              <div class="face bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/IMG_1697.jpeg" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">A <span>Propos</span></h2>
+        <h3>Je vous aide à la mise en place de votre prochain projet</h3>
+        <p>
+          Besoin de rendre visible votre entreprise sur le web ou de proposer
+          une solution numérique pour le monde ? Je suis en mesure de vous
+          accompagner à rendre ce projet réalisable. Faites le choix d'une
+          option performante et dynamique.
+        </p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Mes <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Développement Web</h3>
+          <p>
+            Création de sites web et solutions numériques sur mesure, utilisant
+            les technologies les plus avancées pour répondre parfaitement à vos
+            besoins spécifiques.
+          </p>
+          <a href="#" class="btn">Découvrir</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>Marketing Digital</h3>
+          <p>
+            Optimisez la visibilité de votre site grâce à des stratégies de
+            référencement efficaces. Je vous accompagne pour améliorer le SEO de
+            votre plateforme et attirer un maximum de visiteurs.
+          </p>
+          <a href="#" class="btn">En savoir plus</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bxs-cog"></i>
+          <h3>Refactoring</h3>
+          <p>
+            Améliorez la performance de votre site avec des refontes et des
+            optimisations de code. Je suis là pour vous fournir des solutions
+            performantes et adaptées à vos enjeux.
+          </p>
+          <a href="#" class="btn">Explorer</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Derniers <span>Projets</span></h2>
+
+      <div class="portfolio-container">
+        <!-- Projet 1 -->
+        <div class="portfolio-box">
+          <img src="images/OpenclassRoom.png" alt="Portfolio OpenClassRoom" />
+          <div class="portfolio-layer">
+            <h4>Portfolio OpenClassRoom</h4>
+            <p>
+              Ma première maquette et mon premier projet front-end. Un défi à
+              l'initiation au HTML/CSS.
+            </p>
+            <a href="#" class="open-modal" data-modal="modal1"
+              ><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+
+        <!-- Popup Projet 1 -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/OpenclassRoom.png')"
+            ></div>
+            <h2>Portfolio OpenClassRoom</h2>
+            <p>
+              Ma première maquette et mon premier projet front-end. Un défi à
+              l'initiation au HTML/CSS.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="portfolio-box">
+          <img src="images/Landing Page.png" alt="Landing Page" />
+          <div class="portfolio-layer">
+            <h4>Landing Page</h4>
+            <p>
+              Une page d'accueil élégante conçue pour captiver les visiteurs.
+            </p>
+            <a href="#" class="open-modal" data-modal="modal2"
+              ><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+
+        <!-- Popup Projet 2 -->
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/Landing Page.png')"
+            ></div>
+            <h2>Landing Page</h2>
+            <p>
+              Une page d'accueil élégante conçue pour captiver les visiteurs.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="portfolio-box">
+          <img src="images/App solver.png" alt="SOLVER" />
+          <div class="portfolio-layer">
+            <h4>SOLVER</h4>
+            <p>
+              Application web SOLVER pour le calcul du PGCD, PPCM et fonctions.
+            </p>
+            <a href="#" class="open-modal" data-modal="modal3"
+              ><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+
+        <!-- Popup Projet 3 -->
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/App solver.png')"
+            ></div>
+            <h2>SOLVER</h2>
+            <p>
+              Application web SOLVER pour le calcul du PGCD, PPCM et fonctions.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="portfolio-box">
+          <img src="images/E-commerce.png" alt="E-commerce" />
+          <div class="portfolio-layer">
+            <h4>E-commerce</h4>
+            <p>
+              Maquette E-commerce complète avec pages de connexion et panier.
+            </p>
+            <a href="#" class="open-modal" data-modal="modal4"
+              ><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+
+        <!-- Popup Projet 4 -->
+        <div id="modal4" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/E-commerce.png')"
+            ></div>
+            <h2>E-commerce</h2>
+            <p>
+              Maquette E-commerce complète avec pages de connexion et panier.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/ecommerce monoproduit.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>E-commerce Monoproduit</h4>
+            <p>
+              Site e-commerce monoproduit conçu sous le format d'une landing
+              page.
+            </p>
+            <a href="#" class="open-modal" data-modal="modal5"><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/ecommerce monoproduit.png')"
+            ></div>
+            <h2>E-commerce Monoproduit</h2>
+            <p>
+              Site e-commerce monoproduit conçu sous le format d'une landing
+              page.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="images/Gestionaire de depense.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Gestionnaire de Dépenses</h4>
+            <p>
+              Application web pour gérer les dépenses quotidiennes et suivre vos
+              finances.
+            </p>
+            <a href="#" class="open-modal" data-modal="modal6"><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+        <div id="modal6" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/Gestionaire de depense.png')"
+            ></div>
+            <h2>E-commerce Monoprodui</h2>
+            <p>
+              Site e-commerce monoproduit conçu sous le format d'une landing
+              page.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+        <!-- Projets cachés -->
+        <div class="portfolio-box hidden">
+          <img src="images/QuizApp.png" alt="QuizApp" />
+          <div class="portfolio-layer">
+            <h4>QuizApp</h4>
+            <p>Testez vos connaissances avec Quiz Challenge.</p>
+            <a href="#" class="open-modal" data-modal="modal7"><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+        <div id="modal7" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/QuizApp.png')"
+            ></div>
+            <h2>E-commerce Monoprodui</h2>
+            <p>
+              Site e-commerce monoproduit conçu sous le format d'une landing
+              page.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="portfolio-box hidden">
+          <img src="images/TaskApp.png" alt="TaskApp" />
+          <div class="portfolio-layer">
+            <h4>TaskApp</h4>
+            <p>Application web de gestion des tâches.</p>
+            <a href="#" class="open-modal" data-modal="modal8"><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+        <div id="modal8" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/TaskApp.png')"
+            ></div>
+            <h2>E-commerce Monoprodui</h2>
+            <p>
+              Site e-commerce monoproduit conçu sous le format d'une landing
+              page.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="portfolio-box hidden">
+          <img src="images/EVENTNEXT.png" alt="EVENTNEXT" />
+          <div class="portfolio-layer">
+            <h4>EVENTNEXT</h4>
+            <p>Site événementiel développé avec Bootstrap et PHP.</p>
+            <a href="#" class="open-modal" data-modal="modal9"><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+        <div id="modal9" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/EVENTNEXT.png')"
+            ></div>
+            <h2>E-commerce Monoprodui</h2>
+            <p>
+              Site e-commerce monoproduit conçu sous le format d'une landing
+              page.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="portfolio-box hidden">
+          <img src="images/EIG.png" alt="Refonte EIG" />
+          <div class="portfolio-layer">
+            <h4>Refonte EIG</h4>
+            <p>Projet de refonte du site de EIG Bénin.</p>
+            <a href="#" class="open-modal" data-modal="modal10"><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+        <div id="modal10" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/EIG.png')"
+            ></div>
+            <h2>E-commerce Monoprodui</h2>
+            <p>
+              Site e-commerce monoproduit conçu sous le format d'une landing
+              page.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="portfolio-box hidden">
+          <img src="images/dental-care.png" alt="Refonte EIG" />
+          <div class="portfolio-layer">
+            <h4>Site Dental Care</h4>
+            <p>Conception d'un site pour cabinet dentaire.</p>
+            <a href="#" class="open-modal" data-modal="modal11"><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+        <div id="modal11" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/dental-care.png')"
+            ></div>
+            <h2>Site Dental Care</h2>
+            <p>
+              Conception d'un site pour cabinet dentaire.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="portfolio-box hidden">
+          <img src="images/planete-verte.png" alt="Refonte EIG" />
+          <div class="portfolio-layer">
+            <h4>Planete Verte</h4>
+            <p>Conception d'un site pour l'ecologie</p>
+            <a href="#" class="open-modal" data-modal="modal12"><i class='bx bx-show'></i></a>
+          </div>
+        </div>
+        <div id="modal12" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class='bx bx-x'></i></span>
+            <div
+              class="modal-image"
+              style="background-image: url('images/planete-verte.png')"
+            ></div>
+            <h2>Planete Verte</h2>
+            <p>
+              Conception d'un site pour l'ecologie
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <button id="loadMore" class="btn">Voir plus</button>
+      <button id="loadLess" class="btn hidden">Voir moins</button>
+    </section>
+
+    <div class="testimonial-container">
+      <h2 class="heading">Avis / <span>Témoignages</span></h2>
+
+      <div class="testimonial-wrapper">
+        <div class="testimonial-box mySwiper">
+          <div class="testimonial-content swiper-wrapper">
+            <div class="testiomonial-slide swiper-slide">
+              <img src="images/testimony.avif" alt="Client 1" />
+              <h3>Marie Dupont</h3>
+              <p>
+                "Mohamed a su comprendre nos besoins et nous livrer un site web
+                qui dépasse nos attentes. Son attention aux détails et sa
+                capacité à respecter les délais ont fait toute la différence.
+                Nous recommandons vivement ses services !"
+              </p>
+            </div>
+            <div class="testiomonial-slide swiper-slide">
+              <img src="images/testimony 2.avif" alt="Client 2" />
+              <h3>Jean Martin</h3>
+              <p>
+                "Travailler avec Mohamed a été un véritable plaisir. Son
+                expertise en développement web et sa créativité ont transformé
+                notre vision en réalité. Nous avons reçu de nombreux retours
+                positifs de la part de nos utilisateurs !"
+              </p>
+            </div>
+            <div class="testiomonial-slide swiper-slide">
+              <img src="images/testimony  3.jpg" alt="Client 3" />
+              <h3>Émilie Bernard</h3>
+              <p>
+                "Le projet de refonte de notre site a été mené de main de
+                maître. Mohamed a été très réactif et a su intégrer toutes nos
+                suggestions. Grâce à lui, notre présence en ligne est désormais
+                bien plus dynamique et attrayante !"
+              </p>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contactez <span>Moi</span></h2>
+      <p class="contact-instructions">
+        Veuillez remplir tous les champs pour nous contacter.
+      </p>
+
+      <form action="#" method="POST">
+        <div class="input-box">
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Votre nom" required />
+
+          <label for="email">Adresse mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Votre adresse email"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="phone">Numéro de téléphone</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Votre numéro de téléphone"
+            required
+          />
+
+          <label for="subject">Sujet du mail</label>
+          <input type="text" id="subject" placeholder="Sujet" required />
+        </div>
+
+        <label for="message">Votre message</label>
+        <textarea
+          id="message"
+          placeholder="Écrivez votre message ici"
+          required
+        ></textarea>
+
+        <input type="submit" value="Envoyer" class="btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright © 2023 by Mansa | Tous droits réservés</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
